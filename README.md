@@ -68,8 +68,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 
-Command 
-## php artisan serve
-## npm install
-## nmp run dev
+## Command 
+- php artisan serve
+- npm install
+- nmp run dev
 
