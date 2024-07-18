@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="{{ asset('css/admin.css') }}" rel="stylesheet">
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -9,7 +10,6 @@
             <form action="{{ route('admin.comments.update', ['id' => $comment->id]) }}" method="POST">
                 @csrf
                 @method('PUT')
-                <!-- Ваши поля для редактирования комментария -->
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" value="{{ $comment->name }}" class="form-control">
